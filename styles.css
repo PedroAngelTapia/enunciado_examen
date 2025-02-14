@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal con estructura de dos columnas */
+.container {
+    display: flex;
+    width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sección del formulario */
+.form-container {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Sección de imagen con la foto del león */
+.image-container {
+    flex: 1;
+    background: url('lion.jpg') no-repeat center center/cover;
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Inputs y textarea con diseño minimalista */
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+}
+
+/* Estilo cuando un campo está enfocado */
+input:focus, textarea:focus {
+    border-bottom: 2px solid blue;
+}
+
+/* Botón de envío */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Mensaje de confirmación oculto */
+.hidden {
+    display: none;
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
